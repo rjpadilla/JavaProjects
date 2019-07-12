@@ -20,7 +20,7 @@ public class RyanAndMonicaJob implements Runnable {
         }
     }
 
-    private void makeWithdrawl(int amount) {
+    private synchronized void makeWithdrawl(int amount) {
         if (account.getBalance() >= amount) {
             System.out.println(Thread.currentThread().getName() + " is about to withdraw");
             try {
