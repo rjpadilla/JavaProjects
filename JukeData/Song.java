@@ -20,7 +20,7 @@ class Song implements Comparable<Song>{
     }
 
     public String getArtist(){
-        return rating;
+        return artist;
     }
 
     public String getRating(){
