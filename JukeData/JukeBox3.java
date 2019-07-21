@@ -20,7 +20,7 @@ public class JukeBox3 {
         Collections.sort(songList);
         System.out.println(songList);
 
-        HashSet<Song> songSet = new HashSet<Song>();
+        TreeSet<Song> songSet = new TreeSet<Song>();
         songSet.addAll(songList);
         System.out.println(songSet);
     }
